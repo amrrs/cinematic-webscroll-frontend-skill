@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurel Gates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Syne:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="loading-screen" data-loading-screen>
+      <div class="loading-inner">
+        <p class="loading-label">Aurel Gates</p>
+        <div class="loading-track">
+          <div class="loading-bar" data-loading-bar></div>
+        </div>
+        <p class="loading-value" data-loading-value>0%</p>
+      </div>
+    </div>
+
+    <div class="scene-shell">
+      <video
+        class="background-video"
+        data-background-video
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source src="./assets/fal-background-loop.mp4" type="video/mp4" />
+      </video>
+      <canvas class="webgl-canvas" data-webgl-canvas></canvas>
+      <div class="grain"></div>
+    </div>
+
+    <div class="progress-rail">
+      <div class="progress-fill" data-progress-fill></div>
+    </div>
+
+    <header class="site-header">
+      <div class="brand">AG</div>
+      <nav class="nav">
+        <a href="#hero">Overview</a>
+        <a href="#systems">Craft</a>
+        <a href="#outro">Contact</a>
+      </nav>
+    </header>
+
+    <main class="content-container">
+      <section class="hero-section" id="hero" data-hero>
+        <div class="hero-copy-block">
+          <div class="eyebrow reveal">Aurel Gates</div>
+          <div class="hero-whisper reveal">
+            <span>bronze lattice</span>
+            <span>quiet privacy</span>
+            <span>architectural calm</span>
+          </div>
+          <h1
+            class="hero-title"
+            data-pretext-title
+            aria-label="Boundaries shaped like architecture. Privacy sculpted in bronze light."
+          >
+            <span class="hero-title-sr">Boundaries shaped like architecture.</span>
+          </h1>
+          <p class="hero-copy reveal">
+            Aurel Gates is a hypothetical luxury fencing house creating sculptural entry gates, privacy screens, and bronze-detailed perimeter systems for residences, galleries, and hospitality spaces.
+          </p>
+          <div class="hero-metrics reveal">
+            <div class="metric-card">
+              <span class="metric-value">Estate</span>
+              <span class="metric-label">Monumental entry gates tailored to modern homes</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">Bronze</span>
+              <span class="metric-label">Warm metal finishes layered against matte black structures</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">Custom</span>
+              <span class="metric-label">Each system composed to match the architecture it protects</span>
+            </div>
+          </div>
+          <div class="hero-notes reveal">
+            <div class="hero-note">Private residences</div>
+            <div class="hero-note">Boutique hospitality</div>
+            <div class="hero-note">Bronze light studies</div>
+          </div>
+        </div>
+
+        <div class="hero-media reveal" data-hero-media>
+          <div class="hero-media-frame">
+            <img
+              src="./assets/fal-hero-image.png"
+              alt="Aurel Gates luxury fencing concept"
+              class="hero-image"
+            />
+            <div class="hero-media-overlay"></div>
+            <div class="hero-chip hero-chip-top">Collection 01</div>
+            <div class="hero-chip hero-chip-bottom">Bronze lattice study</div>
+          </div>
+          <div class="material-swatch">
+            <img
+              src="./assets/fal-bronze-texture.png"
+              alt="Bronze texture for Aurel Gates materials"
+              class="material-image"
+            />
+            <div class="material-copy">
+              <span class="material-label">Signature finish</span>
+              <span class="material-title">Brushed bronze patina</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="systems-section" id="systems">
+        <div class="section-intro reveal">
+          <p class="eyebrow">Craft and composition</p>
+          <h2 data-pretext-balance>A fencing brand framed like a luxury house.</h2>
+          <p>
+            The concept treats perimeter design as part of the architecture itself: calm proportions, controlled detailing, and materials that feel bespoke rather than utilitarian.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <p class="feature-index">01</p>
+            <h3>Entry as first impression</h3>
+            <p>Every gate is positioned as the opening gesture of the home, with vertical rhythm, generous spacing, and a silhouette strong enough to anchor the facade.</p>
+          </article>
+          <article class="feature-card reveal">
+            <p class="feature-index">02</p>
+            <h3>Materials with warmth</h3>
+            <p>Bronze accents soften the severity of blackened metal, introducing a quieter luxury that feels collected, tactile, and intentionally architectural.</p>
+          </article>
+          <article class="feature-card reveal">
+            <p class="feature-index">03</p>
+            <h3>Privacy without heaviness</h3>
+            <p>Screens and perimeter systems are imagined as porous, light-aware surfaces that create security while still preserving openness and shadow play.</p>
+          </article>
+        </div>
+
+        <div class="pretext-studio reveal">
+          <div class="pretext-studio-copy">
+            <p class="eyebrow">Composition studies</p>
+            <div
+              class="pretext-rotator"
+              data-pretext-rotator
+              data-pretext-phrases="Thresholds drawn with architectural calm.||Bronze details holding light after dusk.||Perimeter pieces composed like collected objects."
+              aria-label="Thresholds drawn with architectural calm."
+            ></div>
+            <p class="pretext-caption">
+              Aurel Gates frames entry, privacy, and material warmth as one continuous architectural composition.
+            </p>
+          </div>
+          <div
+            class="pretext-playground"
+            data-pretext-playground
+            data-pretext-playground-text="Bronze light slides across the threshold while sculpted rails, floating shadows, and brushed metal accents drift through the approach. Drag the forms and the composition flexes like a living gate study, balancing weight, privacy, and glow in one calm surface."
+          >
+            <div class="pretext-playground-meta">
+              <span>Drag the bronze forms</span>
+              <span>Threshold motion study</span>
+            </div>
+            <div class="pretext-playground-stage" data-pretext-stage>
+              <div class="pretext-playground-copy" data-pretext-copy></div>
+              <button
+                type="button"
+                class="pretext-orb orb-primary"
+                data-pretext-orb
+                aria-label="Drag bronze orb"
+              ></button>
+              <button
+                type="button"
+                class="pretext-orb orb-secondary"
+                data-pretext-orb
+                aria-label="Drag accent orb"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-band reveal">
+          <div class="detail-copy">
+            <p class="eyebrow">Material language</p>
+            <h3 data-pretext-balance>Metalwork that feels tailored to the site.</h3>
+            <p>
+              Aurel Gates pairs matte black structural lines with brushed bronze finishes to create systems that feel residential, collectible, and deeply considered from approach to threshold.
+            </p>
+          </div>
+          <div class="detail-texture">
+            <img
+              src="./assets/fal-bronze-texture.png"
+              alt="Close-up bronze texture panel for Aurel Gates"
+              class="detail-texture-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="outro-section" id="outro">
+        <div class="outro-panel reveal">
+          <p class="eyebrow">Inquiries</p>
+          <h2 data-pretext-balance>Aurel Gates creates quiet statements for contemporary spaces.</h2>
+          <p>
+            For private homes, gallery courtyards, and boutique hospitality projects, the brand is positioned around custom gate systems that feel as intentional as the architecture behind them.
+          </p>
+          <a class="cta" href="#hero">Request a concept</a>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
