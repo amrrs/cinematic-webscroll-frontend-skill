@@ -1,0 +1,7 @@
+interface:
+  display_name: "Cinematic Web Experiences"
+  short_description: "Prompts for cinematic websites"
+  default_prompt: "Use $cinematic-web-experiences to plan a cinematic website with exact GSAP and Three.js motion specs."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+.env
+.env.*
+!.env.example
+
+.tmp-fal-skills/
+
+.DS_Store

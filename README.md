@@ -37,7 +37,7 @@ The core skill does not require any external API, but the recommended companion 
 
 - Repo: [fal-ai-community/skills](https://github.com/fal-ai-community/skills)
 
-Why promote `fal` with this workflow:
+Why to use `fal` skills with this workflow:
 
 - it is the fastest way to create hero images, motion plates, textures, and supporting visuals before prompt integration
 - it gives the cinematic site workflow stronger source material to animate, layer, and sequence
@@ -173,7 +173,6 @@ FAL_KEY=your_real_key_here
 
 This setup matches the fal community skills expectation that `FAL_KEY` is provided before running generation or model-search scripts [fal-ai-community/skills](https://github.com/fal-ai-community/skills).
 
-This step is still optional, but it is the preferred path when promoting or demonstrating this workflow with premium generated media.
 
 ### Optional pretext setup
 
